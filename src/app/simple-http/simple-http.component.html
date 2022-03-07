@@ -1,0 +1,4 @@
+<div class="m-4 text-2xl font-bold">Basic request</div>
+<button class="p-2 m-4 bg-sky-900 hover:bg-sky-400 text-white rounded-lg" (click)="makeRequest()">Make request</button>
+<div *ngIf="loading" class="p-2 m-4 w-[300px] h-[100px] bg-sky-200  border-sky-800 rounded-lg">loading</div>
+<pre>{{data | json}}</pre>

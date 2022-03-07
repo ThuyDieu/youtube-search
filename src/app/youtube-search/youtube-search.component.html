@@ -1,0 +1,6 @@
+<app-search-box (loading)="loading = $event" (results)="updateResults($event)"></app-search-box>
+
+<div class="flex flex-wrap gap-2">
+    <app-search-result class="hover:shadow-lg hover:scale-125 duration-150 m-5 min-w-[150px]" *ngFor="let result of results" [result]="result">
+    </app-search-result>
+</div>
